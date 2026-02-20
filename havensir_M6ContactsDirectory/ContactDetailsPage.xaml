@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="havensir_M6ContactsDirectory.ContactDetailsPage"
+             Title="Contact Details">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+
+            <!-- Contact image -->
+            <Image x:Name="contactImage"
+                   HeightRequest="250"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center" />
+
+            <!-- Name -->
+            <Label x:Name="contactName"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Email -->
+            <Label x:Name="contactEmail"
+                   FontSize="16"
+                   TextColor="Gray" />
+
+            <!-- Phone -->
+            <Label x:Name="contactPhone"
+                   FontSize="16"
+                   TextColor="Gray" />
+
+            <!-- Divider -->
+            <BoxView HeightRequest="1"
+                     BackgroundColor="#E0E0E0"
+                     Margin="0,10" />
+
+            <!-- Description -->
+            <Label x:Name="contactDescription"
+                   FontSize="16" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
